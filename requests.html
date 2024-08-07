@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Requests</title>
+    <link rel="icon" type="image/x-icon" href="assets/icon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #343a40;
+        }
+        #header {
+            background-color: #343a40;
+        }
+        #header a {
+            color: #fff;
+        }
+        #main-menu {
+            background-color: #343a40;
+        }
+        #main-menu a {
+            color: #fff;
+        }
+        #main-menu td {
+            border: 1px solid #343a40;
+            transition: border-color 0.3s ease;
+        }
+        #main-menu td:hover {
+            background-color: #495057;
+        }
+    </style>
+</head>
+<body class="bg-dark text-white">
+<div class="d-flex align-items-center p-3" id="header">
+    <img src="assets/Logo.png" alt="logo" height="30" width="30">
+    <a class="text-white text-decoration-none ml-3" id="linkedin-link" href="#" onclick="navigateTo('home.html')">LinkedIn</a>
+</div>
+<table class="table table-dark w-100" id="main-menu">
+    <tr>
+        <td class="p-2 text-center"><a class="text-white text-decoration-none" href="#" onclick="navigateTo('home.html')">Home</a></td>
+        <td class="p-2 text-center"><a class="text-white text-decoration-none" href="#" onclick="navigateTo('explore.html')">Explore</a></td>
+        <td class="p-2 text-center"><a class="text-white text-decoration-none" href="#" onclick="navigateTo('auth.html')">Login/Register</a></td>
+        <td class="p-2 text-center"><a class="text-white text-decoration-none" href="#" onclick="navigateTo('requests.html')">Requests</a></td>
+    </tr>
+</table>
+<div class="container mt-5">
+    <h2 class="text-info">[*Admin Only]</h2>
+    <hr class="bg-white">
+    <div class="card bg-secondary text-white mb-3">
+        <div class="card-body">
+            <h5 class="card-title">Request from John</h5>
+            <p class="card-text">Username!</p>
+            <p class="card-text">John wants to Change his Username <a href="#" class="text-info">(Details)</a></p>
+            <button type="button" class="btn btn-success">Accept</button>
+            <button type="button" class="btn btn-danger">Decline</button>
+        </div>
+    </div>
+    <div class="card bg-secondary text-white mb-3">
+        <div class="card-body">
+            <h5 class="card-title">Request from Sarah</h5>
+            <p class="card-text">Academic Achievements!</p>
+            <p class="card-text">Sarah wants to Update her Achievements <a href="#" class="text-info">(Details)</a></p>
+            <button type="button" class="btn btn-success">Accept</button>
+            <button type="button" class="btn btn-danger">Decline</button>
+        </div>
+    </div>
+</div>
+<script src="src/requests.js"></script>
+</body>
+</html>
+

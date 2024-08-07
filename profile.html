@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <link rel="icon" type="image/x-icon" href="assets/icon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        #main-menu td {
+            border: 1px solid #343a40;
+            transition: border-color 0.3s ease;
+        }
+        #main-menu td:hover {
+            background-color: #495057;
+        }
+        #user-info, #user-profile {
+            background-color: #343a40;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        #user-info h4, #user-profile h4 {
+            color: #17a2b8;
+        }
+    </style>
+</head>
+<body class="bg-dark text-white">
+<div class="d-flex align-items-center p-3" id="header">
+    <img src="assets/Logo.png" alt="logo" height="30" width="30">
+    <a class="text-white text-decoration-none ml-3" id="linkedin-link" href="#" onclick="navigateTo('home.html')">LinkedIn</a>
+</div>
+
+    <table class="w-100 table-dark mt-3" id="main-menu">
+            <tr>
+            <td class="p-2 text-center"><a class="text-white text-decoration-none" href="#" onclick="navigateTo('home.html')">Home</a></td>
+            <td class="p-2 text-center"><a class="text-white text-decoration-none" href="#" onclick="navigateTo('explore.html')">Explore</a></td>
+            <td class="p-2 text-center"><a class="text-white text-decoration-none" href="#" onclick="navigateTo('auth.html')">Login/Register</a></td>
+            <td class="p-2 text-center"><a class="text-white text-decoration-none" href="#" onclick="navigateTo('requests.html')">Requests</a></td>
+        </tr>
+    </table>
+
+</div>
+
+<div id="user-info"></div>
+<div id="user-profile"></div>
+
+<!--<a href="#" class="btn btn-danger mt-3" onclick="logout()">Logout</a>-->
+
+<script src="src/data.js"></script>
+<script src="src/profile.js"></script>
+</body>
+</html>
+

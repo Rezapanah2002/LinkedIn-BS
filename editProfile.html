@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Profile</title>
+    <link rel="icon" type="image/x-icon" href="assets/icon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        #main-menu td {
+            border: 1px solid #343a40;
+            transition: border-color 0.3s ease;
+        }
+        #main-menu td:hover {
+            background-color: #495057;
+        }
+        .form-section {
+            background-color: #343a40;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .form-section h4 {
+            color: #17a2b8;
+        }
+        .form-control {
+            background-color: #343a40;
+            color: white;
+            border: 1px solid #495057;
+        }
+    </style>
+</head>
+<body class="bg-dark text-white">
+<div class="d-flex align-items-center p-3" id="header">
+    <img src="assets/Logo.png" alt="logo" height="30" width="30" style="background-color: transparent;">
+    <a class="text-white text-decoration-none ml-3" id="linkedin-link" href="#" onclick="navigateTo('home.html')">LinkedIn</a>
+</div>
+<table class="w-100 table-dark" id="main-menu">
+    <tr>
+        <td class="p-2 text-center"><a class="text-white text-decoration-none" href="#" onclick="navigateTo('home.html')">Home</a></td>
+        <td class="p-2 text-center"><a class="text-white text-decoration-none" href="#" onclick="navigateTo('explore.html')">Explore</a></td>
+        <td class="p-2 text-center"><a class="text-white text-decoration-none" href="#" onclick="navigateTo('auth.html')">Login/Register</a></td>
+        <td class="p-2 text-center"><a class="text-white text-decoration-none" href="#" onclick="navigateTo('requests.html')">Requests</a></td>
+    </tr>
+</table>
+<div class="container mt-5">
+    <form action="#" method="post">
+        <div class="form-section">
+            <h4>Personal Info</h4>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" class="form-control" id="username" name="username" value="@sr_miller">
+            </div>
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" class="form-control" id="age" name="age" value="32">
+            </div>
+            <div class="form-group">
+                <label for="birthdate">Birthdate:</label>
+                <input type="date" class="form-control" id="birthdate" name="birthdate" value="1992-11-05">
+            </div>
+            <div class="form-group">
+                <label for="bio">Biography:</label>
+                <textarea class="form-control" id="bio" name="bio" rows="4">Holds degrees in Computer Science and Software Engineering, Known for her creativity and contribution to innovative projects.</textarea>
+            </div>
+        </div>
+        <div class="form-section">
+            <h4>Educational Info</h4>
+            <div class="form-group">
+                <label for="elementary_school">Elementary School:</label>
+                <input type="text" class="form-control" id="elementary_school" name="elementary_school" value="Henderson Elementary School">
+            </div>
+            <div class="form-group">
+                <label for="middle_school">Middle School:</label>
+                <input type="text" class="form-control" id="middle_school" name="middle_school" value="Jackson Middle School">
+            </div>
+            <div class="form-group">
+                <label for="high_school">High School:</label>
+                <input type="text" class="form-control" id="high_school" name="high_school" value="Lincoln High School">
+            </div>
+            <div class="form-group">
+                <label for="bachelor_degree">Bachelor's Degree:</label>
+                <input type="text" class="form-control" id="bachelor_degree" name="bachelor_degree" value="Oakridge University - Computer Science">
+            </div>
+            <div class="form-group">
+                <label for="master_degree">Master's Degree:</label>
+                <input type="text" class="form-control" id="master_degree" name="master_degree" value="Stanford University - Software Engineering">
+            </div>
+            <div class="form-group">
+                <label for="achievement1">Achievement 1:</label>
+                <input type="text" class="form-control" id="achievement1" name="achievement1" value="Achieved 1st place in regional mathematics competitions during elementary school.">
+            </div>
+            <div class="form-group">
+                <label for="achievement2">Achievement 2:</label>
+                <input type="text" class="form-control" id="achievement2" name="achievement2" value="Led the robotics team to victory in the statewide robotics championship during middle school.">
+            </div>
+            <div class="form-group">
+                <label for="achievement3">Achievement 3:</label>
+                <input type="text" class="form-control" id="achievement3" name="achievement3" value="Won 1st prize in the state science fair and received recognition for innovative projects in high school.">
+            </div>
+            <div class="form-group">
+                <label for="achievement4">Achievement 4:</label>
+                <input type="text" class="form-control" id="achievement4" name="achievement4" value="Ranked among the top 5% of students in national programming competitions during university.">
+            </div>
+        </div>
+        <div class="form-section">
+            <h4>Job Info</h4>
+            <div class="form-group">
+                <label for="work_experience1">Work Experience 1:</label>
+                <input type="text" class="form-control" id="work_experience1" name="work_experience1" value="Internship at Tech Solutions Inc. (Summer 20XX): Assisted in software development projects, gaining hands-on experience in web development and database management.">
+            </div>
+            <div class="form-group">
+                <label for="work_experience2">Work Experience 2:</label>
+                <input type="text" class="form-control" id="work_experience2" name="work_experience2" value="Junior Software Engineer at Alpha Software (20XX-20XX): Contributed to the development of client projects, focusing on front-end and back-end development using React.js and Node.js.">
+            </div>
+            <div class="form-group">
+                <label for="work_experience3">Work Experience 3:</label>
+                <input type="text" class="form-control" id="work_experience3" name="work_experience3" value="Senior Software Engineer at Omega Technologies (20XX-Present): Leads a team of developers in designing and implementing complex software solutions. Specializes in full-stack development, with expertise in React.js, Node.js, and GraphQL.">
+            </div>
+            <div class="form-group">
+                <label for="skill1">Skill 1:</label>
+                <input type="text" class="form-control" id="skill1" name="skill1" value="Proficient in React.js, Node.js, and GraphQL.">
+            </div>
+            <div class="form-group">
+                <label for="skill2">Skill 2:</label>
+                <input type="text" class="form-control" id="skill2" name="skill2" value="Experienced in front-end and back-end web development.">
+            </div>
+            <div class="form-group">
+                <label for="skill3">Skill 3:</label>
+                <input type="text" class="form-control" id="skill3" name="skill3" value="Skilled in database management and optimization.">
+            </div>
+            <div class="form-group">
+                <label for="skill4">Skill 4:</label>
+                <input type="text" class="form-control" id="skill4" name="skill4" value="Strong problem-solving abilities and attention to detail.">
+            </div>
+            <div class="form-group">
+                <label for="skill5">Skill 5:</label>
+                <input type="text" class="form-control" id="skill5" name="skill5" value="Excellent communication and teamwork skills.">
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="button" class="btn btn-secondary">Discard</button>
+    </form>
+</div>
+<script src="src/editProfile.js"></script>
+</body>
+</html>
